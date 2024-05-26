@@ -36,9 +36,15 @@ class Smartfon():
         else:
             print('Nie możesz wyłączyć wyłączony telefon!')
 
+    def stan_pamieci(self):
+        if self.stan == 'on':
+            print(f"Stan pamięci: {self.pamiec}")
+
 samsung = Smartfon('Samsung', 'S24', 16000)
 samsung.wlacz_tel()
 samsung.wlacz_tel()
 samsung.zainstaluj_app('Angry Birds', 1000)
+samsung.stan_pamieci()
 samsung.wylacz_tel()
 samsung.wylacz_tel()
+samsung.stan_pamieci()
